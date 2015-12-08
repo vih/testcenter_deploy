@@ -24,7 +24,7 @@ function testcenter_deploy_update_7000() {
   // Setting for date api.
   variable_set('date_first_day', 1);
 
-  $theme = 'donation';
+  $theme = 'radix_stanley';
   $admin_theme = 'seven';
 
   // Enable standard theme.
