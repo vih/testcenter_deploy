@@ -92,6 +92,7 @@ function testcenter_deploy_update_7004() {
   module_enable(array('mailchimp', 'mailchimp_lists'));
   module_enable(array('webform', 'webform_mailchimp', 'select_or_other', 'addressfield_tokens'));
   module_enable(array('media_wysiwyg', 'media_wysiwyg_view_mode'));
+  module_enable(array('radix_colorizer'));
 }
 
 /**
