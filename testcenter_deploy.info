@@ -1,0 +1,13 @@
+core = "7.x"
+description = "Deploy module for Testcenter"
+name = "Fond Deploy"
+package = "Fond"
+project = "fond_deploy"
+version = "7.x-0.1"
+
+dependencies[] = media_wysiwyg
+dependencies[] = media_wysiwyg_view_mode
+dependencies[] = panopoly_seo
+dependencies[] = webform
+dependencies[] = webform_mailchimp
+dependencies[] = select_or_other
