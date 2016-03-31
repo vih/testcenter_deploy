@@ -109,3 +109,23 @@ function testcenter_deploy_update_7005() {
 function testcenter_deploy_update_7006() {
   module_enable(array('i18n_field'));
 }
+
+/**
+ * Set media dialog theme to seven
+ */
+function vih_deploy_update_7007() {
+  variable_set('media_dialog_theme', 'seven');
+}
+
+/**
+ * Settings for transliteration.
+ */
+function vih_deploy_update_7008() {
+  module_enable(array('transliteration'));
+  if (module_exists('pathauto')) {
+    if (module_exists('transliteration')) {
+      variable_set('pathauto_transliterate', 1);
+    }
+    variable_set('pathauto_reduce_ascii', 1);
+  }
+}
