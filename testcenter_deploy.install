@@ -129,3 +129,12 @@ function vih_deploy_update_7008() {
     variable_set('pathauto_reduce_ascii', 1);
   }
 }
+
+/**
+ * Fixing paths for the content.
+ */
+function vih_deploy_update_7008() {
+  variable_set('pathauto_node_pattern', '[node:title]');
+  variable_set('pathauto_node_panopoly_page_pattern', '[node:title]');
+  variable_set('pathauto_node_webform_pattern', 'formular/[node:title]');
+}
